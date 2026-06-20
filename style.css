@@ -556,6 +556,7 @@ footer h3 {
     text-transform: uppercase;
     letter-spacing: 4px;
     margin-bottom: 12px;
+    color: #ffffff;
 }
 
 footer span {
@@ -563,6 +564,7 @@ footer span {
     letter-spacing: 2px;
     opacity: 0.8;
     margin-bottom: 28px;
+    color: #ffffff;
 }
 
 footer .icons {
