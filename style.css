@@ -405,7 +405,7 @@ body {
 }
 
 
-/* пк від 1024 --- */
+/* пк  1024 */
 @media (min-width: 1024px) {
     .BookNow {
         min-height: 700px; 
@@ -494,7 +494,7 @@ body {
     background-color: #3b5cd6;
 }
 
-/*    Планшети від 768   */
+/*    Планшети  768   */
 @media (min-width: 768px) {
     .BookNow2 {
         min-height: 500px;  
@@ -516,7 +516,7 @@ body {
     }
 }
 
-/* ПК та ноутбуки від 1024 */
+/* ПК 1024 */
 @media (min-width: 1024px) {
     .BookNow2 {
         min-height: 600px;
@@ -537,6 +537,119 @@ body {
     }
 }
 
+
+.WhatTouristSay {
+    background-image: url('img/BG.png');
+    padding: 80px 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+.section-title {
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+
+
+.tourist-card {
+    display: flex;
+    max-width: 1000px; 
+    margin: 0 auto;
+    background-color: #393c4b; 
+    box-sizing: border-box;
+    text-align: left;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.tourist-photo-wrapper {
+    flex: 1; 
+    min-width: 0;
+}
+
+.tourist-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+}
+
+
+.tourist-info {
+    flex: 1;
+    padding: 50px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    box-sizing: border-box;
+}
+
+
+.tourist-name {
+    
+    font-size: 18px;
+    color: #ffffff;
+    letter-spacing: 2px; 
+    margin: 0 0 20px 0;
+    text-transform: uppercase;
+}
+
+
+.tourist-quote-wrapper {
+    position: relative;
+    display: flex;
+    gap: 15px; 
+    align-items: flex-start;
+}
+
+
+.quote-icon {
+    width: 18px;
+    height: auto;
+    flex-shrink: 0; 
+    margin-top: 4px; 
+}
+
+
+.tourist-text {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #b0b3be; 
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 26px;
+        margin-bottom: 25px;
+    }
+
+    .tourist-card {
+        flex-direction: column;
+        max-width: 450px; 
+    }
+
+    .tourist-photo-wrapper {
+        width: 100%;
+        height: 250px; 
+    }
+
+    .tourist-info {
+        padding: 30px 20px;
+    }
+
+    .tourist-name {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .tourist-text {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+}
 
 /* --- СЕКЦІЯ FOOTER --- */
 footer {
