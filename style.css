@@ -191,30 +191,29 @@ body {
     grid-template-rows: auto auto;     
     max-width: 1110px;
     margin: 0 auto;
-    padding: 60px 20px;
+    padding: 60px 40px; 
     box-sizing: border-box;
-    row-gap: 20px; 
 }
 
 
 .steps-line {
-    grid-row: 1;            
+    grid-row: 1;             
     grid-column: 1 / 4;      
-    width: 90%;             
-    height: auto;
-    align-self: end;        
+    width: 100%;
+    height: auto;      
+    align-self: center;        
     object-fit: contain;
+    pointer-events: none;        
+    transform: translateY(-60px); 
 }
 
-
 .step-item {
-    grid-row: 2;             
+    grid-row: 1;             
     display: flex;
     flex-direction: column;
     text-align: center;
+    z-index: 2;
 }
-
-/* поз іконок */
 
 .item-search {
     grid-column: 1;          
@@ -234,11 +233,12 @@ body {
     align-items: flex-end;   
 }
 
-/* контент всередині */
+
 .step-item img {
     width: 64px;
     height: 64px;
-    object-fit: contain;
+    object-fit: contain;   
+    background-color: #393c4b; 
     margin-bottom: 24px;
 }
 
@@ -250,33 +250,57 @@ body {
     margin: 0;
     max-width: 424px;
     line-height: 1.4;
+    
+   
 }
 
-/*для мобільних (менше 768px) */
 @media (max-width: 768px) {
-    .Steps {
-        row-gap: 10px; 
-        padding: 30px 10px;
+    .Steps {       
+        padding: 80px 20px 40px 20px;             
+        grid-template-rows: 60px auto;         
+        position: relative;
+        }
+
+    .steps-line {       
+        transform: translateY(-55px);               
+        align-self: start;         
+        width: 100%;
+        height: auto;
     }
 
-    
-    .step-item {
-        justify-self: center !important; 
-        align-items: center !important;
-        text-align: center;
+    .step-item {      
+        grid-row: 1; 
     }
 
-   
-    .step-item img {
-        width: 32px ; 
-        height: 32px ;
-        margin-bottom: 10px;
+    .step-item img {      
+        width: 32px;
+        height: 32px;
+        margin-bottom: 12px;
+        background-color: #393c4b; 
     }
 
-   
-    .step-item p {
-        font-size: 12px;
+    .step-item p {    
+        font-size: 12px; 
         line-height: 1.2;
+    }
+}
+
+@media (max-width: 400px) {
+    .Steps {
+        padding: 70px 10px 30px 10px;
+    }
+    
+    .steps-line {      
+        transform: translateY(-40px); 
+    }
+    
+    .step-item img {
+        width: 28px;
+        height: 28px;
+    }
+    
+    .step-item p {
+        font-size: 10px;
     }
 }
 
@@ -288,9 +312,9 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;    
-    min-height: 100vh; /* Займає весь екран по висоті на телефонах */
+    min-height: 100vh; 
     display: flex;
-    justify-content: center; /* На смартфонах картка стоїть строго по центру */
+    justify-content: center;
     align-items: center;
     padding: 20px;         
     box-sizing: border-box;
