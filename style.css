@@ -14,7 +14,7 @@ body {
 /* СЕКЦІЯ HEADER */
 .header {
     font-family: 'Josefin Sans', sans-serif;
-    min-height: 863px; 
+    min-height: 862px; 
     background: url("img/mountains.png") center/cover no-repeat; 
     display: flex;
     flex-direction: column;
