@@ -16,7 +16,7 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     min-height: 862px; 
     background-attachment: scroll;
-    background: url("/img/Image\ \(1\)\ 1.png") center/cover no-repeat; 
+    background: url("/img/mountains.png") center/cover no-repeat; 
     display: flex;
     flex-direction: column;
     justify-content: center;
